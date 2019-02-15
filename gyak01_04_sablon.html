@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title>Adatszerkezetek és programozási tételek</title>
+	</head>
+<body>
+	<h2>Adatszerkezetek és programozási tételek</h2>
+	<ol>
+	  <li>
+		<p>Készítsd el egy játéknyilvántartás modelljét! A nyilvántartásban az alábbi adatokat tároljuk egy játékról:</p>
+
+		<ul>
+		  <li>a játék neve</li>
+		  <li>kiadó</li>
+		  <li>kiadás éve</li>
+		  <li>kategóriák</li>
+		  <li>karakterek</li>
+		</ul>
+
+		<p>Vegyél fel néhány példát az adatszerkezetbe, és oldd meg a következõ feladatokat. Minden feladatot külön függvény végezzen, amely paraméterként kapja meg az aktuális raktárnyilvántartást.</p>
+
+		<p>Feladatok</p>
+		<ul>
+			<li>a. Listázd ki a nyilvántartásban lévõ játékokat!</li>
+			<li>b. Add meg azokat a játékokat, amelyeknek több karaktere is van!</li>
+			<li>c. Add meg a nyilvántartásban szereplõ legfrissebb játék címét!</li>
+			<li>d. Add meg azokat a játékokat, amelyekben egy paraméterként megkapott karakter szerepel!</li>
+		</ul>
+	  </li>
+	  
+	</ol>
+	
+	<hr>
+    <script type="text/javascript">
+		// Közös részek
+
+	</script>
+	<hr>
+	<h3>1</h3>
+	<script type="text/javascript">
+		// 1.)
+	var games = [
+		{
+			name: 'Killing Floor',
+			publisher: 'Tripwire Interactive',
+			date: 2009,
+			genre: [
+				'First-person shooter', 
+				'Survival horror'
+			],
+			characters: [
+				'Corporal Lewis', 
+				'Sergeant Powers'
+			]
+		},
+		{
+			name: 'Left 4 Dead',
+			publisher: 'Valve Corporation',
+			date: 2008,
+			genre: [
+				'First-person shooter', 
+				'Survival horror'
+			],
+			characters: [
+				'Bill', 
+				'Louis'
+			]
+		},
+		{
+			name: 'How to Survive',
+			publisher: '505 Games',
+			date: 2013,
+			genre: [
+				'Action role-playing', 
+				'Survival horror'
+			],
+			characters: [
+				'Abby', 
+				'Jack'
+			]
+		},
+		{
+			name: 'Plants vs. Zombies',
+			publisher: 'PopCap Games',
+			date: 2009,
+			genre: [
+				'Tower Defense'
+			],
+			characters: [
+				'Dave'
+			]
+		},
+		{
+			name: 'The Sims',
+			publisher: 'Electronic Arts',
+			date: 2000,
+			genre: [
+				'Life simulation'
+			],
+			characters: []
+		}
+	];
+	
+	console.log(games);
+	
+	/*
+	a.Listázd ki a nyilvántartásban lévõ játékokat!
+	b.Add meg azokat a játékokat, amelyeknek több karaktere is van!
+	c.Add meg a nyilvántartásban szereplõ legfrissebb játék címét!
+	d.Add meg azokat a filmeket, amelyekben egy paraméterként megkapott színész játszik!
+	*/
+	
+
+    </script>
+
+</body>
+
+
+
