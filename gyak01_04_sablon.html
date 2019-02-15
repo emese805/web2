@@ -108,7 +108,22 @@
 	c.Add meg a nyilvántartásban szereplõ legfrissebb játék címét!
 	d.Add meg azokat a filmeket, amelyekben egy paraméterként megkapott színész játszik!
 	*/
-	
+	function listaz(tomb) {
+
+		for(var i=0; i<tomb.length; i++){
+			document.writeln(tomb[i].name);
+		}
+
+	}
+	listaz(games);
+	function karakter(tomb) {
+		for(var i=0; i<tomb.length; i++){
+			if(tomb.characters.length>1){
+				document.writeln(tomb[i].name);
+			}
+		}
+
+	}
 
     </script>
 
