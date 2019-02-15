@@ -21,13 +21,29 @@
 	<h3>1</h3>
 	<script type="text/javascript">
 		// 1.)
-
-    </script>
+		function fact(szam) {
+			if(szam<=1){
+				return 1;
+			}
+			return szam*fact(szam-1);
+		}
+		console.log(fact(5));
+	</script>
 	<hr>
 	<h3>2</h3>
 	<script type="text/javascript">
 		// 2.)
-
+		function osztas(a,b) {
+			if(b==0){
+				console.log("hiba");
+			}else {
+				while (a >= b) {
+					a -= b;
+				}
+				return a;
+			}
+		}
+		console.log(osztas(10,0));
     </script>
 	
 </body>
