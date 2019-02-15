@@ -39,34 +39,65 @@
 		//alert('Hello világ');
 		//c
 		function printParagraph(content){
-			document.writeln('<p>' + content + '</p>');
+			if(content) {
+				document.writeln('<p>' + content + '</p>');
+			}
+		}
+
+		function printParagraphConsole(content){
+			if(content) {
+				console.log(content);
+			}
 		}
 		printParagraph('Hello világ');
-		printParagraph();
 	</script>
 	<hr>
 
 	<h3>2</h3>
 	<script type="text/javascript">
 		// 2.)
-
+		for(var i=0; i<10; i++){
+			printParagraphConsole("Hello vilag");
+		}
     </script>
 	<hr>
 	<h3>3</h3>
 	<script type="text/javascript">
 		// 3.)
+		var s=5;
+		for(var i=0; i<10; i++){
+			s+=5;
+			document.writeln(
+					'<p style="font-size: ' +s+ 'px;">' + 'Hello vilag!</p>'
+			)
+		}
 
     </script>
 	<hr>
 	<h3>4</h3>
 	<script type="text/javascript">
 		// 4.)
-
+		var nev;
+		while(!nev){
+			nev= prompt('Mi a neved?');
+		}
+		printParagraph('Hello ' + nev);
     </script>
 	<hr>
 	<h3>5</h3>
 	<script type="text/javascript">
 		// 5.)
+		var n=10;
+		document.writeln('<table>');
+		for(var i=1; i<=n; i++) {
+
+			document.writeln('<tr>');
+			for (var j = 1; j <= n; j++) {
+				document.writeln('<td>'+ i*j+ '</td>');
+			}
+			document.writeln('</tr>');
+		}
+		document.writeln('</table>');
 
     </script>
 	
