@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>3. gyakorlat - Webfejlesztés 2.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/sablon.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<script type="text/javascript" src="gyak.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#">Webfejlesztés 2.</a>
+				</div>
+			</div>
+		</div>
+
+	    <div class="container-fluid">
+			<div class="row-fluid">
+
+				<div class="span3">
+					<div class="well sidebar-nav">
+						<ul class="nav nav-list">
+							<li><a href="#feladat1">1. feladat</a></li>
+							<li><a href="#feladat2">2. feladat</a></li>
+							<li><a href="#feladat3">3. feladat</a></li>
+							<li><a href="#feladat4">4. feladat</a></li>
+							<li><a href="#feladat5">5. feladat</a></li>
+							<li><a href="#feladat6">6. feladat</a></li>
+							<li><a href="#feladat7">7. feladat</a></li>
+							<li><a href="#feladat8">8. feladat</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="span9">
+					<div class="well">
+						<h1>3. gyakorlat <small>Webfejlesztés 2.</small></h1>
+					</div>
+
+
+					<h2 id="feladatok">Feladatok</h2>
+
+
+					<h3 id="feladat1">1. feladat</h3>
+					<p>Adott egy paragrafusbeli szöveg, amelyben néhány szó <code>span</code> elembe van foglalva vagy hivatkozásként van megadva. A paragrafusra kattintáskor írd ki a konzolra:</p>
+					<ol style="list-style-type: lower-alpha;">
+						<li><p>az eseményt jelző objektumot;</p></li>
+						<li><p>az esemény típusát;</p></li>
+						<li><p>a kattintás közben lenyomott egérgombot;</p></li>
+						<li><p>az egér kattintáskori pozícióját;</p></li>
+						<li><p>az eseményt eredetileg jelző objektumot;</p></li>
+						<li><p><code><span>span</span></code> elemre kattintva a <span><code>span</code></span> elem szövegét.</p></li>
+						<li><p>Ha a hivatkozás szövege "libero", akkor ne kövesse a hivatkozást.</p></li>
+					</ol>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+						<p>Lorem ipsum <a href="http://translate.google.com/#la/hu/dolor">dolor</a> sit amet, <span>consectetur</span> adipiscing elit. <span>Proin ut faucibus justo.</span> Nullam vulputate iaculis blandit. Sed at placerat mi. Cras volutpat, urna sed accumsan dapibus, <a href="http://www.libero.hu">libero</a> massa cursus felis, eget consectetur libero orci ut sem. Fusce id mollis nibh. In vulputate et turpis eu semper. Sed pharetra tincidunt velit. Fusce pharetra eros vitae placerat luctus. <span>Fusce cursus ultrices tellus et lobortis.</span></p>
+					</div>
+
+
+					<h3 id="feladat2">2. feladat</h3>
+					<p>Írd ki az oldalra folyamatosan az alábbi adatokat:</p>
+					<ol style="list-style-type: lower-alpha;">
+						<li><p>A felhasználó egere két kattintás között átlagosan hány pixelnyi utat tesz meg?</p></li>
+						<li><p>Átlagosan mennyi idő telik el két kattintás között?</p></li>
+					</ol>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+
+					</div>
+
+
+					<h3 id="feladat3">3. feladat</h3>
+					<p>Egy listában kattints két listaelemre, és cseréld fel őket (a tartalmukat)!</p>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+
+					</div>
+
+
+					<h3 id="feladat4">4. feladat</h3>
+					<p>Készítsünk egy csak számokat elfogadó mezőt.</p>
+					<ol style="list-style-type: lower-alpha;">
+						<li><p>Gépelés közben meg se jelenjenek a számoktól eltérő karakterek.</p></li>
+						<li><p>A megoldás működjön minden olyan szöveges beviteli mezőre, amelynek <code>szam</code> stílusosztály be van állítva.</p></li>
+					</ol>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+
+					</div>
+
+
+					<h3 id="feladat5">5. feladat</h3>
+					<p>Az oldalon minden olyan hivatkozást tiltsunk le, amelyik nem ELTÉs címre mutat!</p>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+						<ul id="lista">
+							<li><a href="http://www.elte.hu">ELTE honlapja</a></li>
+							<li><a href="http://webprogramozas.inf.elte.hu">Webprogramozás szerver</a></li>
+							<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript referencia</a></li>
+							<li><a href="http://jsfiddle.net/">JavaScript homokozó</a></li>
+						</ul>
+					</div>
+
+
+					<h3 id="feladat6">6. feladat</h3>
+					<p>Valahány mozifilmről tároljuk a címét, megjelenési évét, hosszát és rendezőjét. Mivel sok film is lehet, ezért olyan felületet szeretnénk, ahol egy szűrőmezőbe írva csak azok a filmcímek jelennek meg, amelyek tartalmazzák a szűrőmezőbe írt szöveget. A kiválasztott filmcím fölé víve az egeret pedig jelenítsük meg az adott film összes részletét!</p>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+
+					</div>
+
+
+					<h3 id="feladat7">7. feladat</h3>
+					<p>Készíts "kézi" amőbát! Adott egy táblázat üres cellákkal. Valamelyik cellájába kattintva írjunk felváltva "X"-et és "O"-t. Ha egy cella tartalma nem üres, akkor ne történjen semmi.</p>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+
+					</div>
+
+
+					<h3 id="feladat8">8. feladat</h3>
+					<p>Készíts memóriajátékot! A páros számú cellában rejts el számokat, és találd meg úgy a párokat, hogy egyszerre csak kettőt fordíthatsz fel! Számold meg, hogy hány lépésben sikerül kitalálni a feladatot! Legyen lehetőség több játékos megadására, ebben az esetben jelezd, hogy éppen ki van soron!</p>
+					<div class="megoldas well">
+						<h4>Megoldas</h4>
+
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
